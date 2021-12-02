@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AumentHonkai</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <link  rel="icon" href="../img/logo-ah.png" type="image/png"/>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-sm bg-color-blue">
+        <div class="container-lg p-0">
+            <a class="navbar-brand" href="../index.html">
+                <h4 class="link-color">Aument<span class="colortitle">Honkai</span></h4>
+            </a>
+            <button class="navbar-toggler link-color" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-justify"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center ">
+                    <li class="nav-item"><a class="nav-b nav-link" href="../Modos/modos.html">Modos</a></li>
+                    <li class="nav-item"><a class="nav-b nav-link" href="../Tierlist/tierlist.html">Tierlist</a></li>
+                    <li class="nav-item"><a class="nav-b nav-link" href="../Equipament/equipament.html">Equipamiento</a></li>
+                    <li class="nav-item"><a class="nav-b nav-link" href="../Valkyries/valkryies.html">Valkyrias</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--ContentForm-->
+    <div class="container-lg bg-color-blue mt-2 mb-2 p-2">
+        <h4 class="colortitle">Formulari</h4>
+        <p>Para poder participar en la creación y la actualización de AumentHonkai debes de rellenar todo el formulario, y a lo último poner como eres como jugador.
+            <br>
+            Ten en cuenta que podemos tardar un tiempo en darte una respuesta, después de eso se te ara una entrevista y veremos si eres apto para participar.</p>
+        <form action="">
+            <div class="row">
+                <div class="col-sm">
+                    <label for="Nickname">NickName<span id="er_nick"></span></label>
+                    <input type="text" class="form-control" id="nickname">
+                </div>
+                <div class="col-sm">
+                    <label for="discord">Discord<span id="er_disc"></span></label>
+                    <input type="text" class="form-control" id="discord">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <label for="email">Email<span id="er_email"></span></label>
+                     <input type="email" class="form-control" id="email">
+                </div>
+                <div class="col-sm">
+                    <label for="UID">UID<span id="er_uid"></span></label>
+                    <input type="text" class="form-control" id="uid">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <label for="server">Servidor <span id="er_server"></span></label>
+                    <select class="form-select" id="server">
+                        <option value="0">Selecciona...</option>
+                        <option value="1">Global</option>
+                        <option value="2">SEA</option>
+                        <option value="3">JP</option>
+                        <option value="4">CH</option>
+                        <option value="5">KR</option>
+                        <option value="6">TW</option>
+                    </select>
+                </div>
+                <div class="col-sm">
+                    <label for="idioma">Idioma<span id="er_idioma"></span></label>
+                    <select class="form-select" id="idioma">
+                        <option value="0">Selecciona...</option>
+                        <option value="1">Ingles</option>
+                        <option value="2">Aleman</option>
+                        <option value="3">Japones</option>
+                        <option value="4">Chino</option>
+                        <option value="5">Koreano</option>
+                        <option value="6">Francés</option>
+                        <option value="7">Spanish</option>
+                        <option value="8">Tailandés</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="textdesc">Descripcion personal<span id="er_texta"></span></label>
+                    <textarea class="form-control" aria-label="With textarea" id="text_area"></textarea>
+                </div>
+            </div>
+        </form>
+        <div class="d-flex justify-content-center mt-2">
+            <button class="btn bottom_orange" type="submit" href="#" onclick="validarform()">Submit form</button>
+        </div>
+   </div>
+    <!--Footer-->
+    <footer class="container-fluid footerbg footerdown">
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-md">
+                    <h4 class="link-color">Aument<span class="colortitle">Honkai</span></h4>
+                    <p>AumentHonkai is not affiliated with or endorsed by miHoYo.</p>
+                    <p>© AumentHonkai 2021</p>
+                </div>
+                <div class="col-sm text-center">
+                    <h4>
+                        Contactar
+                    </h4>
+                    <div><a class="link-color" href="mailto: honkai3rd_global@mihoyo.com">Email</a></div>
+                    <div><a class="link-color" href="https://discord.com/invite/hi3">Discord</a></div>
+                </div>
+                <div class="col-sm text-center mb-2">
+                    <h4>Community Links</h4>
+                    <div><a class="link-color" href="https://twitter.com/HonkaiImpact3rd">Twitter</a></div>
+                    <div><a class="link-color" href="https://discord.com/invite/hi3">Discord</a></div>
+                    <div><a class="link-color" href="https://www.facebook.com/global.honkaiimpact/">Facebook</a></div>
+                    <div><a class="link-color" href="https://www.youtube.com/channel/UCko6H6LokKM__B03i5_vBQQ">Youtube</a></div>
+                    <div><a class="link-color" href="https://www.instagram.com/honkaiimpact3rd/">Instagram</a></div>        
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/ah_form.js"></script>
+</body>
+</html>
